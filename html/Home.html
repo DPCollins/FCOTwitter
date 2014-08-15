@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+    <meta charset="utf-8">
+    <title>FCO Ambassador Networks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+<!-- 
+	<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        
+      }
+      
+     body p {
+     	text-align: justify;
+  		-webkit-hyphens: auto;
+  		-moz-hyphens: auto;
+  		-ms-hyphens: auto;
+  		 hyphens: auto;
+}
+	.row {
+        padding: 9px 14px;
+		margin-bottom: 12px;
+		background-color: #f7f7f9;
+		border: 1px solid #e1e1e8;
+		border-radius: 4px
+      }
+	    
+   
+    </style>
+	
+ -->
+<style>
+
+.image-responsive {
+	max-width: 125%;
+	}
+</style>
+
+
+	
+	<link rel="stylesheet" href="{{url_for('static', filename='css/bs.min.css') }}" media="screen" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/charts.css') }}" media="screen" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/dc.css') }}" media="screen" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/starter-template.css') }}" media="screen" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/starter-template.css') }}" media="screen" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/carousel.css') }}" media="screen" />	
+	<link rel="stylesheet" href="{{url_for('static', filename='css/d3_tip.css') }}" media="screen" />
+
+<!-- 
+	<link rel="stylesheet" href="css/bootstrap.css" media="screen" />
+	<link rel="stylesheet" href="css/charts.css" media="screen" />
+	<link rel="stylesheet" href="css/dc.css" media="screen" />
+	<link href="css/starter-template.css" rel="stylesheet">
+	<link href="css/d3_tip.css" rel="stylesheet">
+ -->
+
+</head>
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ambassador Networks</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////// -->
+
+<!-- <div class="container"> -->
+ <div class="container marketing">
+<br>
+<h1>FCO Ambassador Twitter Networks</h1>
+<p>
+Preliminary social network analysis using Twitter data. Follower information is gathered and processed using a python script and visualised with the
+open source tool Gephi. Rudimental community detection algorithms are implemented and the layout of the networks are dictated by
+Force Atlas and Fruchterman-Reingold models. Specific details will be given in the About section which is linked to at the top of the page. 
+</p>
+
+<br>
+<br>
+<!-- START THE FEATURETTES -->
+
+      <div class="row featurette">
+        <div class="col-md-8">
+         <a href="static/images/ChrisTrott_lbl.png">  <img class="featurette-image img-responsive" src="static/images/CTWEB.jpg" alt="Generic placeholder image"></a>
+        </div>
+        <div class="col-md-4">
+          <h2 class="featurette-heading"><a href="https://twitter.com/CGChrisTrott">@CGChrisTrott</a>
+          <span class="text-muted">Consul General to Cape Town</span></h2>
+<!--           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+<!--         </div> -->
+      </div>
+	</div>
+ 
+      <hr class="featurette-divider">
+
+ 
+      <div class="row featurette">
+        <div class="col-md-4">
+          <h2 class="featurette-heading"><a href="https://twitter.com/UKinHolySee">@UKinHolySee</a>
+          <span class="text-muted">British Embassy to the Holy See</span></h2>
+<!--           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+        </div>
+        <div class="col-md-8">
+         <a href="static/images/UKHolySee_lbl.png">  <img class="featurette-image img-responsive" src="static/images/HolySeeWEB.jpg" alt="Generic placeholder image"></a>
+        </div>
+      </div>
+
+      
+      <hr class="featurette-divider">
+
+ 
+      <div class="row featurette">
+        <div class="col-md-4">
+          <h2 class="featurette-heading"><a href="https://twitter.com/HMAVilnius">@HMAVilnius</a>
+          <span class="text-muted">Ambassador to Lithuania</span></h2>
+<!--           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+        </div>
+        <div class="col-md-8">
+        <a href="static/images/DHuntCurved.png">  <img class="featurette-image img-responsive" src="static/images/DHWEB.jpg" alt="Generic placeholder image"></a>
+        </div>
+      </div>
+     
+     
+     
+     
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-8">
+       <a href="static/images/UKSS_lbl.png"><img class="featurette-image img-responsive" src="static/images/UKSSWEB.jpg" alt="Generic placeholder image"></a>
+        </div>
+        <div class="col-md-4">
+          <h2 class="featurette-heading"><a href="https://twitter.com/UKinSouthSudan">@UKinSouthSudan</a> 
+          <span class="text-muted">British Embassy in South Sudan</span></h2>
+<!--           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+<!--         </div> -->
+      </div>
+	</div>
+
+
+
+
+<footer>
+<p class="pull-right"><a href="#">Back to top</a></p>
+<p>D.Collins GDS 2014</p>
+</footer>	
+
+<!-- </div> -->
+
+
+
+
+
+
+
+<!--[if lte IE 8]><script src="js/r2d3.js"></script><![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="static/js/bootstrap.js"></script>
+
+<!--<![endif]-->
+
+<script>
+
+
+// });
+
+</script>
